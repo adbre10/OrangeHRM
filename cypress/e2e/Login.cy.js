@@ -32,7 +32,7 @@ describe("Login checks", ()=>{
         cy.myLogin(myData.userRegistered, myData.correctPass)
         //cy.myLogin("a", "a")
         //Check alert message is shown:     
-        cy.get('.oxd-userdropdown-name').contains(myData.UserLogged)
+        cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').contains("Dashboard")
     })
 }) 
 
